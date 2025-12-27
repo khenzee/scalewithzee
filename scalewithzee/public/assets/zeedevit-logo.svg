@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704.08 256.9">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Orbitron-Medium, Orbitron;
+        font-size: 105.03px;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(203.43 161.54)"><tspan class="cls-5" x="0" y="0">ze</tspan><tspan x="141.79" y="0">e</tspan><tspan class="cls-3" x="214.47" y="0">d</tspan><tspan class="cls-4" x="282.95" y="0">e</tspan><tspan class="cls-6" x="350.7" y="0">v</tspan><tspan x="432.83" y="0">it</tspan></text>
+  <g>
+    <polygon class="cls-2" points="270.86 8.16 270.82 8.16 177.09 8.16 2.91 8.16 2.91 8.98 68.42 74.49 110.76 74.49 3.8 181.44 4.78 182.41 96.64 182.41 270.86 8.19 270.84 8.18 270.86 8.16"/>
+    <polygon class="cls-2" points="66.54 248.74 204.53 248.74 270.86 182.41 132.87 182.41 66.54 248.74"/>
+  </g>
+</svg>
