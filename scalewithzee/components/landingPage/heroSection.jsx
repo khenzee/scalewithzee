@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, ArrowRight } from "lucide-react";
 
 
 const HeroSection = () => {
@@ -24,32 +24,39 @@ const HeroSection = () => {
   return (
     <section className=" text-shadow-green-800 relative bg-primary">
       <div className="absolute left-0 overflow-hidden top-0 w-full h-full">
-        <Image src={"/assets/zeedevit-pattern1-08.svg"} width={1080} height={1080} alt="zeedevit badge" className="h-full w-full opacity-40 object-cover scale-120" />
+        <Image
+          src={"/assets/zeedevit-pattern1-08.svg"}
+          width={1080}
+          height={1080}
+          alt="zeedevit badge"
+          className="h-full w-full opacity-40 object-cover scale-120"
+        />
       </div>
-      <div className="md:text-center mb-4">
+      <div className="md:text-center md:absolute mb-4 mt-16 md:mt-8">
         <div>
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{
-                duration: 10,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              style={{
-                display: "inline-block",
-                transformOrigin: "center",
-              }}
-            >
-              <Image
-                src={"/assets/zeedevit-mascot.svg"}
-                width={120}
-                height={120}
-                alt="zeedevit badge"
-              />
-            </motion.div>
-          </div>
+          <motion.div
+            animate={{ rotate: -360 }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+            style={{
+              display: "inline-block",
+              transformOrigin: "center",
+            }}
+          >
+            <Image
+              src={"/assets/zeedevit-mascot.svg"}
+              width={120}
+              height={120}
+              alt="zeedevit badge"
+              className="md:w-60"
+            />
+          </motion.div>
+        </div>
       </div>
-      <div className="md:text-center max-w-4xl mx-auto my-auto relative ">
+      <div className="md:text-center md:mt-24 max-w-4xl mx-auto my-auto relative ">
         <h1 className="capitalize">
           we build system for
           <br />
@@ -66,12 +73,18 @@ const HeroSection = () => {
             {FOCUS[currentIndex]}
           </motion.span>
         </h1>
-        <div className="mt-12">
-          <div className="text-left max-w-xl">
+        <div className="mt-12 md:mt-8">
+          <div className="text-left md:text-center max-w-xl mx-auto">
             <div>
-              <Link href={"#"} className=" text-base font-semibold bg-background px-4 py-2 rounded-sm inline-block mb-4 ">
+              <Link
+                href={"#apply"}
+                className=" text-base font-semibold bg-background px-4 py-2 rounded-sm inline-block md:hidden mb-4 group"
+              >
                 Join SCALEWITHZEE
-                <ArrowDownRight className="inline-block ml-2 " size={24} />
+                <ArrowDownRight
+                  className="inline-block ml-2 group-hover:ml-6 transition-all ease-in-out"
+                  size={24}
+                />
               </Link>
             </div>
             <p>
@@ -79,9 +92,18 @@ const HeroSection = () => {
               customers, automate bookings, and increase sales for service-based
               businesses.
             </p>
-          </div>
-          <div>
-            <Link href={"#"}></Link>
+            <div className="mt-4">
+              <Link
+                href={"#apply"}
+                className="md:inline-block hidden text-base font-semibold bg-background px-4 py-2 rounded-sm  mb-4 group"
+              >
+                Join SCALEWITHZEE
+                <ArrowRight
+                  className="inline-block ml-2 group-hover:ml-6 transition-all ease-in-out"
+                  size={24}
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
